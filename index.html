@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raibelle Altura — IT / Network | Portfolio</title>
+  <meta name="description" content="Raibelle P. Altura — IT graduate (Network Technology). Portfolio: network, CCTV, web dev, and technical support at Hikvision." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#94a3b8; --glass: rgba(255,255,255,0.04);
+      --maxw:1000px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#071126 0%,var(--bg) 100%);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--maxw);margin:32px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .avatar-img {
+      width: 64px;
+      height: 64px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid var(--accent);
+      box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+    }
+    .avatar-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    h1{margin:0;font-size:20px}
+    .subtitle{color:var(--muted);font-size:13px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:14px}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    .lead{font-size:18px;margin:0 0 12px 0}
+    .cta{display:flex;gap:10px;margin-top:14px}
+    .btn{background:var(--accent);color:#021026;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .skill-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:8px;font-size:13px;color:var(--muted)}
+    .right .stats{display:flex;flex-direction:column;gap:10px}
+    .stat{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:12px;border-radius:10px;text-align:center}
+    .stat h3{margin:0;font-size:20px}
+    section{margin-top:20px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .project{padding:16px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+    .project h4{margin:0 0 8px 0}
+    footer{margin-top:30px;padding:14px;text-align:center;color:var(--muted);font-size:13px}
+    /* responsive */
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.avatar-img{width:56px;height:56px}.right{order:2}.brand h1{font-size:16px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <a href="https://www.linkedin.com/in/raibelle-altura-538245219" target="_blank" class="avatar-img">
+          <img src="profile.png" alt="Raibelle Altura" />
+        </a>
+        <div>
+          <h1>Raibelle P. Altura</h1>
+          <div class="subtitle">Technical Support Engineer @ Hikvision | IT / Network | Web Developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="card">
+          <p class="lead">Hi — I’m Raibelle, a Bachelor of Science in Information Technology graduate (Network Technology) — <strong>Graduated: July 28, 2025</strong>. Currently working as a <strong>Technical Support Engineer at Hikvision</strong>, with previous internship experience at PLDT South Luzon Field Services. Skilled in network setup, fiber optics, CCTV installation, and web development.</p>
+
+          <div class="skill-grid">
+            <div class="skill">Technical Support (Hikvision Products)</div>
+            <div class="skill">Network Setup (SFP, Media Converters)</div>
+            <div class="skill">Fiber Optic (OTDR, Tracing)</div>
+            <div class="skill">CCTV Installation & Support</div>
+            <div class="skill">HTML / CSS / JS / PHP / SQL</div>
+            <div class="skill">Windows & Linux Basics</div>
+            <div class="skill">TeamViewer / Remote Support</div>
+          </div>
+
+          <div class="cta">
+            <a class="btn" href="mailto:raivelaltura@gmail.com?subject=Portfolio%20Inquiry">Hire / Contact</a>
+            <a class="btn secondary" href="#projects">View Projects</a>
+          </div>
+
+          <section id="about" style="margin-top:18px">
+            <h3>About Me</h3>
+            <p style="color:var(--muted);">Currently part of the Technical Support team at Hikvision, providing product demos, installation guidance, troubleshooting, and customer support. I also have hands-on experience from my PLDT internship — configuring routers, handling fiber optic diagnostics, and preparing network topology maps. My freelance work includes CCTV installation, web development, and system documentation.</p>
+          </section>
+        </div>
+
+        <div class="right">
+          <div class="card">
+            <div class="stats">
+              <div class="stat">
+                <h3>500+</h3>
+                <div style="color:var(--muted);font-size:13px">Hours of OJT</div>
+              </div>
+              <div class="stat">
+                <h3>3</h3>
+                <div style="color:var(--muted);font-size:13px">Major Projects</div>
+              </div>
+            </div>
+
+            <section id="contact" style="margin-top:14px">
+              <h3>Contact</h3>
+              <p style="color:var(--muted);font-size:14px;margin:6px 0">📞 0945-841-2336<br>✉️ <a href="mailto:raivelaltura@gmail.com" style="color:var(--accent);text-decoration:none">raivelaltura@gmail.com</a></p>
+              <p style="color:var(--muted);font-size:13px;margin:6px 0">Lipa City, Batangas • Open to onsite Batangas / remote / opportunities abroad</p>
+              <a class="btn" href="#contact-form" style="display:inline-block;margin-top:8px">Message Me</a>
+            </section>
+          </div>
+
+          <div class="card" style="margin-top:14px">
+            <h3>Key Strengths</h3>
+            <ul style="color:var(--muted);padding-left:18px;margin:8px 0 0 0">
+              <li>Fast learner & dependable team player</li>
+              <li>Detail-oriented in documentation & audits</li>
+              <li>Practical troubleshooting mindset</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section id="skills" class="card" style="margin-top:20px">
+        <h3>Technical Skills</h3>
+        <div style="color:var(--muted);margin-top:8px">
+          <strong>Networking & Fiber:</strong> LAN setup, SFP modules, media converters, OTDR testing, fiber tracing.<br>
+          <strong>Systems & Support:</strong> Router configuration, Windows troubleshooting, TeamViewer, remote support tools.<br>
+          <strong>Web & Dev:</strong> HTML, CSS, JavaScript, PHP, SQL — built reservation & ordering systems.<br>
+          <strong>CCTV & Security:</strong> IP camera installation, NVR configuration, Hikvision SADP and iVMS basics.
+        </div>
+      </section>
+
+      <section id="projects" style="margin-top:18px">
+        <h3 style="color:#e6eef6">Highlighted Projects</h3>
+        <div class="grid">
+          <div class="project">
+            <h4>Hikvision Product Support</h4>
+            <p style="color:var(--muted)">Providing technical assistance, product demos, troubleshooting, and maintenance for Hikvision security systems across client sites.</p>
+          </div>
+          <div class="project">
+            <h4>PLDT Network Mapping & Audit</h4>
+            <p style="color:var(--muted)">Created geo-based IPBB & N4i network topology maps; produced web floor plans for DFON and radio rooms used in audits.</p>
+          </div>
+          <div class="project">
+            <h4>Custom Reservation & Order System</h4>
+            <p style="color:var(--muted)">Developed a PHP & SQL-based system for a local client to manage reservations and orders.</p>
+          </div>
+          <div class="project">
+            <h4>CCTV Installations & Support</h4>
+            <p style="color:var(--muted)">Installed both hardwired and IP-based CCTV systems; trained end-users and provided maintenance support.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-form" class="card" style="margin-top:18px">
+        <h3>Get My Resume / Contact</h3>
+        <p style="color:var(--muted)">You can download my resume or send me a message — I usually reply within 24 hours.</p>
+        <p style="color:var(--muted)">[Resume] <a href="/Raibelle_Altura_Resume.pdf" style="color:var(--accent);text-decoration:none">Download PDF</a></p>
+        <form onsubmit="sendMessage(event)">
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <input name="name" placeholder="Your name" required style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#e6eef6">
+            <input name="email" placeholder="Your email" required style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#e6eef6">
+          </div>
+          <textarea name="message" placeholder="Message" required style="width:100%;margin-top:8px;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#e6eef6;min-height:100px"></textarea>
+          <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:8px">
+            <button class="btn" type="submit">Send Message</button>
+            <a class="btn secondary" href="mailto:raivelaltura@gmail.com">Email Me</a>
+          </div>
+        </form>
+        <script>
+          function sendMessage(e){
+            e.preventDefault();
+            const f = e.target;
+            const name = f.name.value;
+            const email = f.email.value;
+            const msg = f.message.value;
+            const mailto = `mailto:raivelaltura@gmail.com?subject=Portfolio%20Contact%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent(msg + '\n\nContact: ' + email)}`;
+            window.location.href = mailto;
+          }
+        </script>
+      </section>
+    </main>
+
+    <footer>
+      © 2025 Raibelle P. Altura — Technical Support Engineer @ Hikvision • Lipa City • Available for work (onsite Batangas / remote / abroad)
+    </footer>
+  </div>
+</body>
+</html>
